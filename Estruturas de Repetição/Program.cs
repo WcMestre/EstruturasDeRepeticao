@@ -10,28 +10,29 @@ namespace Estruturas_de_Repetição
     {
         static void Main(string[] args)
         {
-            int qtde, cont=1, numero, resultado=0;
+            int quantidade=0, contador=1, numero=0, resultado=0;
 
             Console.Write("Quantos números você quer somar? ");
-            qtde = int.Parse(Console.ReadLine());
+            quantidade = int.Parse(Console.ReadLine());
 
             /*
-            for (cont = 1; cont <= qtde; cont ++)
+            for (contador = 1; contador <= quantidade; contador ++)
             {
-                Console.Write("Digite o número " + cont + " : ");
+                Console.Write("Digite o número " + contador + " : ");
                 numero = int.Parse(Console.ReadLine());
                 resultado = resultado + numero;
             }
             */
 
-            while (cont <= qtde)
+            
+            while (contador <= quantidade)
             {
-                Console.Write("Digite o número " + cont + " : ");
+                Console.Write("Digite o número " + contador + " : ");
                 numero = int.Parse(Console.ReadLine());
                 resultado = resultado + numero;
-                cont++;
+                contador++;
             }
-
+            
             Console.Write("\nO resultado é: " + resultado);
 
             Console.Write("\nPressione qualquer tecla para continuar . . . ");
